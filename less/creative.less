@@ -50,8 +50,18 @@ p {
     background-color: @theme-primary;
 }
 
-.bg-dark {
+.bg-darker {
     background-color: @gray-darker;
+    color: white;
+}
+
+.bg-dark {
+      background-color: @gray-dark;
+      color: white;
+}
+
+.bg-medium {
+    background-color: @gray;
     color: white;
 }
 
@@ -64,7 +74,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -310,6 +320,23 @@ header {
     h2 {
         margin: 0 auto 20px;
     }
+}
+
+.footer {
+  padding: 30px;
+  margin: 0;
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+.breaker {
+  width: 100%;
+  padding: 50px;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .mobile-hide{ display: none; }
 }
 
 // Bootstrap Overrides
